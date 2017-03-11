@@ -109,6 +109,14 @@
       it('should return [1,4] for [1, 2, 3 , 4]', function () {
         expect(findMinMax([1, 2, 3, 4])).toEqual([1, 4]);
       });
+	  
+	  it('should return [3, 12] for [3, 4, 5, 6, 12, 8]', function () {
+        expect(findMinMax([3, 4, 5, 6, 12, 8])).toEqual([3, 12]);
+      });
+	  
+	  it('should return [4, 24] for [4, 6, 8, 10, 12, 14, 16, 20, 24]', function () {
+        expect(findMinMax([4, 6, 8, 10, 12, 14, 16, 20, 24])).toEqual([4, 24]);
+      });
 
       it('should return [4, 6] for [6, 4]', function () {
         expect(findMinMax([6, 4])).toEqual([4, 6]);
@@ -124,6 +132,22 @@
 
       it('should return [4] for [4, 4, 4, 4]', function () {
         expect(findMinMax([4, 4, 4, 4])).toEqual([4]);
+      });
+	  
+	  it('should return [5, 100] for [5,10, 25, 50, 100]', function () {
+        expect(findMinMax([5,10, 25, 50, 100])).toEqual([5, 100]);
+      });
+	  
+	  it('should return [2, 8] for [8,2,8]', function () {
+        expect(findMinMax([8,2,8])).toEqual([2, 8]);
+      });
+	  
+	  it('should return [2, 9] for [4,6,7,9,2,4,8,4,9]', function () {
+        expect(findMinMax([4,6,7,9,2,4,8,4,9])).toEqual([2, 9]);
+      });
+	  
+	  it('should return [1, 121] for [8,5,4,6,9,1,7,11,77,22,121,99]', function () {
+        expect(findMinMax([8,5,4,6,9,1,7,11,77,22,121,99])).toEqual([1, 121]);
       });
 
     });
