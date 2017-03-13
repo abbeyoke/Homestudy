@@ -1,7 +1,7 @@
 
 (function(){
   'use strict';
-  describe("Employee Class: Create a Employees for a company", function() {
+  describe("Employee Class: Create Employees for a company", function() {
 
     it("The employee should be a type of `object`, and an instance of the `Employee` class", function() {
       var moses = new Employee('Moses');
@@ -35,7 +35,7 @@
     it("The concatenation of emmanuel's fname and last name to give his full name", function() {
       var emmanuel = new Employee('Emmanuel', 'Christian', 12, '6000usd');
 	  var fullname = emmanuel.fname +" " + emmanuel.lname;
-      expect(name).toBe('Emmanuel Christian');
+      expect(fullname).toBe('Emmanuel Christian');
     });
 
   });
